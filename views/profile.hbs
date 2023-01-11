@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile Page</title>
+	<link rel="icon"  href="./public/images/login_icon.png">
+	<link rel="stylesheet"  href="./public/css/profile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+</head>
+<body>
+	<div class="form_div">
+		<h1>REGISTRATION FORM 1</h1>
+		<p>{{Unique_ID}}</p>
+		<form action="/logout">
+			<button type="submit"><i class="fa fa-sign-out">Logout</i></button>
+		</form>
+	</div>
+	<div class="form_1_2">
+		<p class="form_error" style="display: {{lookup style1 0}}">{{lookup style1 1}}</p>
+	</div>
+	<form action="/profile" method="post">
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Frist Name</p>
+				<input type="text" name="frist_name" value="{{lookup sendData 0}}" placeholder="Frist Name" class="form_1_input">
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Last Name</p>
+				<input type="text" name="last_name" value="{{lookup sendData 1}}" placeholder="Last Name" class="form_1_input">
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Age</p>
+				<input type="text" name="age" value="{{lookup sendData 2}}" placeholder="Age..." class="form_1_input">
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Email ID</p>
+				<input type="email" name="email_id" value="{{lookup sendData 3}}" placeholder="Email ID" class="form_1_input">
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Phone NUmber</p>
+				<input type="text" name="phone_no" value="{{lookup sendData 4}}" placeholder="Phone NUmber" class="form_1_input">
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your HSLC Mark</p>
+				<input type="text" name="hslc" value="{{lookup sendData 5}}" placeholder="HSLC Marks" class="form_1_input">
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">Select Your Gender</p>
+				<select name="gender" id="gender" class="form_1_select">
+					<option value="Select">Select</option>
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">Select Your Stream</p>
+				<select name="stream" id="stream" class="form_1_select">
+					<option value="Select">Select</option>
+					<option value="Arts">Arts</option>
+					<option value="Science">Science</option>
+					<option value="Commerce">Commerce</option>
+				</select>
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">Select Your Year</p>
+				<select name="year" id="year" class="form_1_select">
+					<option value="Select">
+						Select
+					</option>
+					<option value="1st year">
+						1st year
+					</option>
+					<option value="2nd year">
+						2nd year
+					</option>
+				</select>
+			</div>
+		</div>
+		<div class="form_1_1">
+			<button type="submit" class="form_1_btn"><i class="fa fa-arrow-right">Next Page</i></button>
+		</div>
+	</form>
+	</div>
+</body>
+</html>

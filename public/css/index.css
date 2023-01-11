@@ -1,0 +1,91 @@
+body
+{
+	background: #37516e;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.login_div
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+	flex-direction: column;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 20px;
+}
+.login_div1
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	text-align: center;
+	align-content: center;
+	flex-flow: column;
+	justify-content: center;
+	width: 100%;
+	word-wrap: break-word;
+	border:2px solid white;
+	border-radius: 10px;
+	background: #1d1a30;
+}
+.login_div1 h1
+{
+	font-size: 40px;
+	border-bottom: 2px solid white;
+	color: white;
+	letter-spacing: 7px;
+	transition: 1s;
+}
+.login_div1 h1:hover{
+	letter-spacing: 12px;
+	cursor: pointer;
+}
+.logp
+{
+	color: white;
+	font-size: 20px;
+	font-family:times new roman;
+	letter-spacing: 4px;
+}
+.login_div1 input
+{
+	width: 50%;
+	border:none;
+	outline: none;
+	border-bottom: 1px solid white;
+	background: transparent;
+	font-size: 17px;
+	color: white;
+	font-family: cursive;
+	transition: 1s;
+}
+.login_div1 input:focus
+{
+	padding-bottom: 10px;
+}
+.login_div1 button
+{
+	font-size: 20px;
+	background: #1d1a30;
+	width: 30%;
+	cursor: pointer;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	letter-spacing: 8px;
+	border-radius: 20px;
+	border:2px solid white;
+}
+.logerror
+{
+	font-size: 20px;
+	color:red;
+	font-family: cursive;
+}

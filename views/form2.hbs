@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile Page</title>
+	<link rel="icon"  href="./public/images/login_icon.png">
+	<link rel="stylesheet"  href="./public/css/profile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+</head>
+<body>
+	<div class="form_div">
+		<h1>REGISTRATION FORM 2</h1>
+		<p>{{Unique_ID}}</p>
+		<form action="/logout">
+			<button type="submit"><i class="fa fa-sign-out">Logout</i></button>
+		</form>
+	</div>
+	<div class="form_1_2">
+		<p class="form_error" style="display: {{lookup style1 0}}">{{lookup style1 1}}</p>
+	</div>
+	<form action="/form2" method="post">
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Frist Subject</p>
+				<input type="text" name="frist_subject" placeholder="Frist Subject" value="{{lookup sendData 0}}" class="form_1_input">
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Second Subject</p>
+				<input type="text" name="second_subject" placeholder="second Subject" value="{{lookup sendData 1}}" class="form_1_input">
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Thrid Subject</p>
+				<input type="text" name="thrid_subject" placeholder="Third Subject" value="{{lookup sendData 2}}" class="form_1_input">
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Fourth Subject</p>
+				<input type="text" name="fourth_subject" placeholder="Fourth Subject" value="{{lookup sendData 3}}" class="form_1_input">
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Fivth Subject</p>
+				<input type="text" name="fivth_subject" placeholder="Fivth Subject" value="{{lookup sendData 4}}" class="form_1_input">
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">Enter Your Elective Subject</p>
+				<input type="text" name="elective_subject" placeholder="Elective Subject" value="{{lookup sendData 5}}" class="form_1_input">
+			</div>
+		</div>
+		<div class="form_1_1">
+			<button type="submit" class="form_1_btn"><i class="fa fa-arrow-right">Next Page</i></button>
+		</div>
+	</form>
+	</div>
+</body>
+</html>

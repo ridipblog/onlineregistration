@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon"  href="./public/images/login_icon.png">
+	<link rel="stylesheet"  href="./public/css/mainpage.css">
+	<link rel="stylesheet"  href="./public/css/profile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<title>Main Page {{Unique_ID}}</title>
+</head>
+<body>
+	<div class="profile_div">
+		<img src="{{link}}" class="profile_img">
+		<h1 class="profile_h">{{Unique_ID}}</h1>
+	</div>
+	<div class="mainpage_div mainpage_bar_div">
+			<div class="mainpage_div_1">
+				<a href="/update" class="mainpage_btn"><i class="fa fa-edit"></i>UPDATE PAGE</a>
+				<a href="/mainpage" class="mainpage_btn"><i class="fa fa-edit"></i>MAIN PAGE</a>
+			</div>
+			<div class="mainpage_div_2">
+				<form action="/logout">
+					<button class="mainpage_btn"><i class="fa fa-sign-out">LOG OUT</i></button>
+				</form>
+		</div>
+	</div>
+	<div class="hide_div one">
+		<div class="mainpage_div" style="background: transparent;border:none;margin-top: 10px;">
+			<p class="form_1_p" style="font-size: 20px;">Student Information</p>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 0}}</p>
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 1}}</p>
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 2}}</p>
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 3}}</p>
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 4}}</p>
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 5}}</p>
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 6}}</p>
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 7}}</p>
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentInformation 8}}</p>
+			</div>
+		</div>
+		<div class="form_1_1" style="justify-content: space-around;">
+			<button class="form_1_btn"  style="background: #151f24;width: 42%" onclick="mainpage_btn_fun1()">Next Page</button>
+		</div>
+	</div>
+	<div class="hide_div two">
+		<div class="mainpage_div" style="background: transparent;border:none;margin-top: 10px;">
+			<p class="form_1_p" style="font-size: 20px;">Subject Information</p>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentSubject 0}}</p>
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentSubject 1}}</p>
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentSubject 2}}</p>
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentSubject 3}}</p>
+			</div>
+		</div>
+		<div class="form_1">
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentSubject 4}}</p>
+			</div>
+			<div class="form_1_div_2">
+				<p class="form_1_p">{{lookup studentSubject 5}}</p>
+			</div>
+		</div>
+		<div class="form_1_1">
+			<button class="form_1_btn"  style="background: #151f24;width: 42%;" onclick="mainpage_btn_fun2()">Prev Page</button>
+		</div>
+	</div>
+	<script src="./public/js/mainpage.js"></script>
+</body>
+</html>
